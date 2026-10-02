@@ -16,7 +16,7 @@ window.SITE = {
       country: "United Kingdom",
       when: "Summer 2026",
       runtime: "0:2X",
-      youtubeId: "",
+      youtubeId: "9yStl9l6Mik",
       blurb: "[Two lines on Scotland: the light, the moment, why you went.]"
     },
     {
@@ -25,7 +25,7 @@ window.SITE = {
       country: "United States",
       when: "Summer 2026",
       runtime: "0:2X",
-      youtubeId: "",
+      youtubeId: "8u2hW86oaec",
       blurb: "[Two lines on Wyoming: the light, the moment, why you went.]"
     }
   ],
