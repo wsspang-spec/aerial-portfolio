@@ -53,7 +53,7 @@ window.SITE = {
     { src: "images/badlands.jpg", place: "Badlands, South Dakota", shape: "wide" }
   ],
 
-  about: "Some friendships are built in one place and then scattered by the roads that carry everyone onward. Right now, we're all moving into the next stage of life, me included, and the time we get together is getting shorter. These films are my way of making it count: one trip, one friend, each from a different chapter of my life. From the air you can see what you miss on the ground, the river that divides a valley and the road that crosses it anyway.",
+  about: "Some friendships are built in one place and then scattered by the roads that carry everyone onward. Right now, we're all moving into the next stage of life, and the time we get together is getting shorter. These films are my way of making it count: one trip, one friend, each from a different chapter of my life. From the air you can see what you miss on the ground, the river that divides a valley and the road that crosses it anyway.",
 
   gear: [
     ["Drone", "DJI Mini 4K"],
