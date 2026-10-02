@@ -36,10 +36,10 @@ window.SITE = {
   // shape: "wide" (16:9), "square" (1:1) or "tall" (4:5)
   stills: [
     { src: "images/wyoming-devils-tower.jpg", place: "Devils Tower, Wyoming", shape: "wide" },
-    { src: "images/edinburgh-castle.jpg", place: "Edinburgh, Scotland", shape: "wide" },
+    { src: "images/edinburgh-castle-rock.jpg", place: "Edinburgh Castle, Scotland", shape: "wide" },
     { src: "images/scotland-glencoe.jpg", place: "Glen Coe, Scotland", shape: "wide" },
     { src: "images/kerrera-coast.jpg", place: "Isle of Kerrera, Scotland", shape: "wide" },
-    { src: "images/kerrera-gylen.jpg", place: "Gylen Castle, Kerrera", shape: "wide" },
+    { src: "images/edinburgh-castle.jpg", place: "Edinburgh, Scotland", shape: "wide" },
     { src: "images/kerrera-tower.jpg", place: "Gylen Castle at dusk", shape: "wide" },
     { src: "images/porto-river.jpg", place: "Douro River, Porto", shape: "wide" },
     { src: "images/porto-bridge.jpg", place: "Dom Luís I Bridge, Porto", shape: "wide" }
