@@ -21,7 +21,7 @@ window.SITE = {
       video4k: "media/scotland-1080.mp4",
       poster: "media/scotland-poster.jpg",
       youtubeId: "9yStl9l6Mik",
-      blurb: "Louie and I drove from Edinburgh into the Highlands. On the Isle of Kerrera we hiked out to a castle ruin and camped beside it. The fish and chips we ate on the way up were one of the best meals I've ever had."
+      blurb: "Five castles, two tents, one very judgmental herd of sheep. Louie and I drove from Edinburgh into the Highlands, caught a ferry off the west coast, and camped beside a castle ruin on the remote Isle of Kerrera. The fish and chips on the way up are still one of the best meals of my life."
     },
     {
       key: "wyoming",
@@ -33,7 +33,7 @@ window.SITE = {
       video4k: "media/west-1080.mp4",
       poster: "media/west-poster.jpg",
       youtubeId: "8u2hW86oaec",
-      blurb: "I met Bailey in Jackson and joined him on the journey to Minneapolis. We pulled into the Badlands in the dark with no idea what was out there. The next morning, over coffee, we found out."
+      blurb: "Bailey had a truck and a route to Minneapolis. I had a drone and nowhere better to be. We rolled into the Badlands after dark and found out over coffee the next morning that we'd parked at the edge of the Wall."
     }
   ],
 
