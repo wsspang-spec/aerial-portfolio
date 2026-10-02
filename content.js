@@ -45,11 +45,10 @@ window.SITE = {
     { src: "images/kerrera-coast.jpg", place: "Isle of Kerrera, Scotland", shape: "wide" },
     { src: "images/gylen-camp.jpg", place: "Camp at Gylen Castle, Kerrera", shape: "wide" },
     { src: "images/scotland-glencoe.jpg", place: "Glen Coe, Scotland", shape: "wide" },
-    { src: "images/stirling-castle.jpg", place: "Stirling Castle, Scotland", shape: "wide" },
     { src: "images/edinburgh-castle-rock.jpg", place: "Edinburgh Castle, Scotland", shape: "wide" },
     { src: "images/inveraray-castle.jpg", place: "Inveraray Castle, Scotland", shape: "wide" },
     { src: "images/porto-river.jpg", place: "Douro River, Porto", shape: "wide" },
-    { src: "images/porto-train.jpg", place: "Dom Luís I Bridge, Porto", shape: "wide" },
+    { src: "images/porto-bridge.jpg", place: "Dom Luís I Bridge, Porto", shape: "wide" },
     { src: "images/wyoming-devils-tower.jpg", place: "Devils Tower, Wyoming", shape: "wide" },
     { src: "images/badlands.jpg", place: "Badlands, South Dakota", shape: "wide" }
   ],
