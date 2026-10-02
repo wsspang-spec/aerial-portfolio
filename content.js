@@ -41,14 +41,12 @@ window.SITE = {
     { src: "images/kerrera-coast.jpg", place: "Isle of Kerrera, Scotland", shape: "wide" },
     { src: "images/edinburgh-castle.jpg", place: "Edinburgh, Scotland", shape: "wide" },
     { src: "images/kerrera-tower.jpg", place: "Gylen Castle at dusk", shape: "wide" },
-    { src: "images/inveraray-river.jpg", place: "Inveraray Castle, Scotland", shape: "wide" },
-    { src: "images/inveraray-castle.jpg", place: "Inveraray, Argyll", shape: "wide" },
     { src: "images/inveraray-bridge.jpg", place: "Aray Bridge, Inveraray", shape: "wide" },
     { src: "images/porto-river.jpg", place: "Douro River, Porto", shape: "wide" },
     { src: "images/porto-bridge.jpg", place: "Dom Luís I Bridge, Porto", shape: "wide" }
   ],
 
-  about: "Some friendships are built in one place and then scattered by the roads that carry everyone onward. These films are about finding the way back: one trip, one friend, each from a different chapter of my life. From the air you can see what you miss on the ground, the river that divides a valley and the road that crosses it anyway.",
+  about: "Some friendships are built in one place and then scattered by the roads that carry everyone onward. Right now, most of the people I grew up with are moving into the next stage of life, and the time we get together is getting shorter. These films are my way of making it count: one trip, one friend, each from a different chapter of my life. From the air you can see what you miss on the ground, the river that divides a valley and the road that crosses it anyway.",
 
   gear: [
     ["Drone", "DJI Mini 4K"],
