@@ -29,6 +29,9 @@ window.SITE = {
       country: "Wyoming · South Dakota · Minnesota",
       when: "Summer 2026",
       runtime: "0:23",
+      video: "media/west-720.mp4",
+      video4k: "media/west-1080.mp4",
+      poster: "media/west-poster.jpg",
       youtubeId: "8u2hW86oaec",
       blurb: "I met Bailey in Jackson and joined him on the journey to Minneapolis. We pulled into the Badlands in the dark with no idea what was out there. The next morning, over coffee, we found out."
     }
