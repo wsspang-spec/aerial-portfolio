@@ -46,15 +46,14 @@ window.SITE = {
   about: "",
 
   gear: [
-    ["Drone", "[DRONE MODEL]"],
-    ["Edit & grade", "[SOFTWARE]"],
+    ["Drone", "DJI Mini 4K"],
     ["Based in", "New York"]
   ],
 
   // Leave a url as "" to hide that button
   links: {
-    email: "",
-    instagram: "",
+    email: "wsspang@gmail.com",
+    instagram: "https://www.instagram.com/instaspang/",
     youtube: ""
   }
 };
