@@ -35,15 +35,15 @@ window.SITE = {
   // Put photos in the /images folder, then list them here.
   // shape: "wide" (16:9), "square" (1:1) or "tall" (4:5)
   stills: [
-    { src: "images/wyoming-devils-tower.jpg", place: "Devils Tower, Wyoming", shape: "wide" },
-    { src: "images/edinburgh-castle-rock.jpg", place: "Edinburgh Castle, Scotland", shape: "wide" },
-    { src: "images/scotland-glencoe.jpg", place: "Glen Coe, Scotland", shape: "wide" },
-    { src: "images/kerrera-coast.jpg", place: "Isle of Kerrera, Scotland", shape: "wide" },
-    { src: "images/edinburgh-castle.jpg", place: "Edinburgh, Scotland", shape: "wide" },
     { src: "images/kerrera-tower.jpg", place: "Gylen Castle at dusk", shape: "wide" },
+    { src: "images/kerrera-coast.jpg", place: "Isle of Kerrera, Scotland", shape: "wide" },
+    { src: "images/scotland-glencoe.jpg", place: "Glen Coe, Scotland", shape: "wide" },
+    { src: "images/edinburgh-castle-rock.jpg", place: "Edinburgh Castle, Scotland", shape: "wide" },
     { src: "images/inveraray-bridge.jpg", place: "Aray Bridge, Inveraray", shape: "wide" },
+    { src: "images/edinburgh-castle.jpg", place: "Edinburgh, Scotland", shape: "wide" },
     { src: "images/porto-river.jpg", place: "Douro River, Porto", shape: "wide" },
-    { src: "images/porto-bridge.jpg", place: "Dom Luís I Bridge, Porto", shape: "wide" }
+    { src: "images/porto-bridge.jpg", place: "Dom Luís I Bridge, Porto", shape: "wide" },
+    { src: "images/wyoming-devils-tower.jpg", place: "Devils Tower, Wyoming", shape: "wide" }
   ],
 
   about: "Some friendships are built in one place and then scattered by the roads that carry everyone onward. Right now, most of the people I grew up with are moving into the next stage of life, and the time we get together is getting shorter. These films are my way of making it count: one trip, one friend, each from a different chapter of my life. From the air you can see what you miss on the ground, the river that divides a valley and the road that crosses it anyway.",
