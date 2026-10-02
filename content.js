@@ -30,13 +30,13 @@ window.SITE = {
     }
   ],
 
-  comingSoon: { place: "[Next place]", when: "In the edit" },
+  comingSoon: { place: "Porto, Portugal", when: "In the edit" },
 
   // Put photos in the /images folder, then list them here.
   // shape: "wide" (3:2), "square" (1:1) or "tall" (4:5)
   stills: [
     { src: "images/scotland-glencoe.jpg", place: "Glen Coe, Scotland", shape: "wide" },
-    { src: "images/porto-river.jpg", place: "Douro River, Porto", shape: "square" },
+    { src: "images/porto-river.jpg", place: "Douro River, Porto", shape: "wide" },
     { src: "images/porto-bridge.jpg", place: "Dom Luís I Bridge, Porto", shape: "wide" }
   ],
 
