@@ -35,7 +35,7 @@ window.SITE = {
   // Put photos in the /images folder, then list them here.
   // shape: "wide" (3:2), "square" (1:1) or "tall" (4:5)
   stills: [
-    { src: "", place: "Scotland", shape: "wide" },
+    { src: "images/scotland-glencoe.jpg", place: "Glen Coe, Scotland", shape: "wide" },
     { src: "", place: "Wyoming", shape: "wide" },
     { src: "", place: "Scotland", shape: "square" },
     { src: "", place: "Wyoming", shape: "square" },
