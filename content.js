@@ -43,7 +43,7 @@ window.SITE = {
   // shape: "wide" (16:9), "square" (1:1) or "tall" (4:5)
   stills: [
     { src: "images/kerrera-coast.jpg", place: "Isle of Kerrera, Scotland", shape: "wide" },
-    { src: "images/gylen-camp.jpg", place: "Gylen Castle, Isle of Kerrera", shape: "wide" },
+    { src: "images/gylen-camp.jpg", place: "Camp at Gylen Castle, Kerrera", shape: "wide" },
     { src: "images/scotland-glencoe.jpg", place: "Glen Coe, Scotland", shape: "wide" },
     { src: "images/inveraray-castle.jpg", place: "Inveraray Castle, Scotland", shape: "wide" },
     { src: "images/porto-river.jpg", place: "Douro River, Porto", shape: "wide" },
