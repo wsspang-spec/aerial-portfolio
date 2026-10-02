@@ -3,7 +3,7 @@
 // Anything left as "" or with [BRACKETS] shows as a placeholder.
 // ============================================================
 window.SITE = {
-  name: "[YOUR NAME]",
+  name: "Spang Aerials",
 
   // Which film loops at the top of the page: "scotland" or "wyoming"
   heroFilm: "scotland",
