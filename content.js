@@ -36,11 +36,8 @@ window.SITE = {
   // shape: "wide" (3:2), "square" (1:1) or "tall" (4:5)
   stills: [
     { src: "images/scotland-glencoe.jpg", place: "Glen Coe, Scotland", shape: "wide" },
-    { src: "", place: "Wyoming", shape: "wide" },
-    { src: "", place: "Scotland", shape: "square" },
-    { src: "", place: "Wyoming", shape: "square" },
-    { src: "", place: "Scotland", shape: "wide" },
-    { src: "", place: "Wyoming", shape: "wide" }
+    { src: "images/porto-river.jpg", place: "Douro River, Porto", shape: "square" },
+    { src: "images/porto-bridge.jpg", place: "Dom Luís I Bridge, Porto", shape: "wide" }
   ],
 
   about: "",

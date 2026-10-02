@@ -60,7 +60,7 @@
   if (c.when) $("coming-when").textContent = c.when;
 
   // Stills
-  $("stills-grid").innerHTML = (S.stills || []).map(function (s) {
+  $("stills-grid").innerHTML = (S.stills || []).filter(function (s) { return s.src; }).map(function (s) {
     var inner = s.src
       ? '<img src="' + esc(s.src) + '" alt="Aerial photo, ' + esc(s.place) + '" loading="lazy">'
       : placeholder("Photo · " + s.place);
