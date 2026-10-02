@@ -59,14 +59,49 @@
   if (c.place) $("coming-place").textContent = c.place;
   if (c.when) $("coming-when").textContent = c.when;
 
-  // Stills
-  $("stills-grid").innerHTML = (S.stills || []).filter(function (s) { return s.src; }).map(function (s) {
-    var inner = s.src
-      ? '<img src="' + esc(s.src) + '" alt="Aerial photo, ' + esc(s.place) + '" loading="lazy">'
-      : placeholder("Photo · " + s.place);
-    return '<figure class="still ' + esc(s.shape || "wide") + '"><div class="frame">' + inner +
-      "</div><figcaption>" + esc(s.place) + " · Summer 2026</figcaption></figure>";
+  // Stills (click to open full screen)
+  var stills = (S.stills || []).filter(function (s) { return s.src; });
+  $("stills-grid").innerHTML = stills.map(function (s, i) {
+    return '<figure class="still ' + esc(s.shape || "wide") + '"><button type="button" class="still-btn" data-i="' + i +
+      '" aria-label="View full screen: ' + esc(s.place) + '"><div class="frame"><img src="' + esc(s.src) +
+      '" alt="Aerial photo, ' + esc(s.place) + '" loading="lazy"></div></button><figcaption>' +
+      esc(s.place) + " · Summer 2026</figcaption></figure>";
   }).join("");
+
+  var lb = document.createElement("div");
+  lb.className = "lb"; lb.setAttribute("role", "dialog"); lb.setAttribute("aria-modal", "true"); lb.setAttribute("aria-label", "Photo viewer");
+  lb.innerHTML = '<button type="button" class="lb-close" aria-label="Close">×</button>' +
+    '<button type="button" class="lb-prev lb-nav" aria-label="Previous photo">‹</button>' +
+    '<img alt=""><p class="lb-cap"></p>' +
+    '<button type="button" class="lb-next lb-nav" aria-label="Next photo">›</button>';
+  document.body.appendChild(lb);
+  var lbImg = lb.querySelector("img"), lbCap = lb.querySelector(".lb-cap"), cur = 0, lastFocus = null;
+  function show(i) {
+    cur = (i + stills.length) % stills.length;
+    lbImg.src = stills[cur].src; lbImg.alt = "Aerial photo, " + stills[cur].place;
+    lbCap.textContent = stills[cur].place + " · " + (cur + 1) + " / " + stills.length;
+  }
+  function open(i) { lastFocus = document.activeElement; show(i); lb.classList.add("open"); document.body.classList.add("lb-lock"); lb.querySelector(".lb-close").focus(); }
+  function close() { lb.classList.remove("open"); document.body.classList.remove("lb-lock"); if (lastFocus) lastFocus.focus(); }
+  $("stills-grid").addEventListener("click", function (e) {
+    var b = e.target.closest(".still-btn"); if (b) open(+b.getAttribute("data-i"));
+  });
+  lb.querySelector(".lb-close").onclick = close;
+  lb.querySelector(".lb-prev").onclick = function () { show(cur - 1); };
+  lb.querySelector(".lb-next").onclick = function () { show(cur + 1); };
+  lb.addEventListener("click", function (e) { if (e.target === lb) close(); });
+  document.addEventListener("keydown", function (e) {
+    if (!lb.classList.contains("open")) return;
+    if (e.key === "Escape") close();
+    else if (e.key === "ArrowLeft") show(cur - 1);
+    else if (e.key === "ArrowRight") show(cur + 1);
+  });
+  var tx = null;
+  lb.addEventListener("touchstart", function (e) { tx = e.touches[0].clientX; }, { passive: true });
+  lb.addEventListener("touchend", function (e) {
+    if (tx === null) return; var dx = e.changedTouches[0].clientX - tx; tx = null;
+    if (Math.abs(dx) > 50) show(cur + (dx < 0 ? 1 : -1));
+  });
 
   // About + gear
   if (S.about) $("about-text").textContent = S.about;
