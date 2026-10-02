@@ -23,15 +23,15 @@
   if (S.name) { $("brand-name").textContent = S.name; $("footer-name").textContent = S.name; }
   $("year").textContent = new Date().getFullYear();
 
-  // Hero
+  // Hero reel: sharper file on large screens, lighter file on phones / data saver
   var films = S.films || [];
-  var hero = films.filter(function (f) { return f.key === S.heroFilm; })[0] || films[0];
-  if (hero) {
-    $("hero-frame").innerHTML = (validId(hero.youtubeId)
-      ? embed(hero.youtubeId, { title: hero.place + " aerial film", controls: false })
-      : placeholder(hero.place + " film loops here")) +
-      '<span class="tag tag-l">Now playing · ' + esc(hero.place) + "</span>" +
-      '<span class="tag tag-r">' + esc(hero.when) + "</span>";
+  var hv = $("hero-video");
+  if (hv) {
+    var c = navigator.connection || {};
+    var big = window.innerWidth * (window.devicePixelRatio || 1) > 1400 && !c.saveData;
+    if (big) { hv.querySelector("source").src = "media/hero-1440.mp4"; hv.load(); }
+    if (window.matchMedia && matchMedia("(prefers-reduced-motion: reduce)").matches) { hv.removeAttribute("autoplay"); hv.pause(); }
+    var p = hv.play && hv.play(); if (p && p.catch) p.catch(function () {});
   }
 
   // Films
