@@ -48,7 +48,7 @@ window.SITE = {
     { src: "images/porto-bridge.jpg", place: "Dom Luís I Bridge, Porto", shape: "wide" }
   ],
 
-  about: "Some friendships are built in one place and then scattered by the roads that carry everyone onward. These films are about finding the way back: one trip, one friend, each from a different chapter of my life. From the air you can see what you miss on the ground, the river that divides a valley and the road that crosses it anyway. I started flying to film lacrosse clinics. Now I mostly fly on trips like these. I recently moved from Boston to New York, so the roads are getting longer.",
+  about: "Some friendships are built in one place and then scattered by the roads that carry everyone onward. These films are about finding the way back: one trip, one friend, each from a different chapter of my life. From the air you can see what you miss on the ground, the river that divides a valley and the road that crosses it anyway.",
 
   gear: [
     ["Drone", "DJI Mini 4K"],
