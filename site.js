@@ -34,24 +34,53 @@
     var p = hv.play && hv.play(); if (p && p.catch) p.catch(function () {});
   }
 
-  // Films
+  // Films: self-hosted (autoplay muted loop + sound toggle) when a video file is set, else YouTube embed
+  var bigScreen = window.innerWidth * (window.devicePixelRatio || 1) > 1400 && !(navigator.connection || {}).saveData;
   $("film-list").innerHTML = films.map(function (f, i) {
     var num = String(i + 1).padStart(2, "0");
-    var media = validId(f.youtubeId)
-      ? embed(f.youtubeId, { title: f.place + " aerial film", controls: true, lazy: true })
-      : placeholder(f.place + " film");
-    var watch = validId(f.youtubeId)
-      ? '<a class="text-link" href="https://www.youtube.com/watch?v=' + f.youtubeId + '" target="_blank" rel="noopener">Play with sound →</a>'
-      : "";
+    var media, sound = "";
+    if (f.video) {
+      var src = bigScreen && f.video4k ? f.video4k : f.video;
+      media = '<video class="film-video" muted loop playsinline preload="metadata"' +
+        (f.poster ? ' poster="' + esc(f.poster) + '"' : "") + ' aria-label="' + esc(f.place) + ' film">' +
+        '<source src="' + esc(src) + '" type="video/mp4"></video>';
+      sound = '<button type="button" class="sound-btn" aria-pressed="false">Sound on</button>';
+    } else if (validId(f.youtubeId)) {
+      media = embed(f.youtubeId, { title: f.place + " aerial film", controls: true, lazy: true });
+    } else {
+      media = placeholder(f.place + " film");
+    }
     return '<article class="film' + (i % 2 ? " flip" : "") + '">' +
-      '<div class="frame">' + media + "</div>" +
+      '<div class="frame">' + media + sound + "</div>" +
       '<div class="film-text">' +
       '<span class="num">' + num + "</span>" +
       "<h3>" + esc(f.place) + "</h3>" +
       '<p class="label">' + esc([f.country, f.when, f.runtime].filter(Boolean).join(" · ")) + "</p>" +
-      '<p class="blurb">' + esc(f.blurb) + "</p>" + watch +
+      '<p class="blurb">' + esc(f.blurb) + "</p>" +
       "</div></article>";
   }).join("");
+
+  // Play films only while on screen; one with sound at a time
+  var vids = [].slice.call(document.querySelectorAll(".film-video"));
+  var reduce = window.matchMedia && matchMedia("(prefers-reduced-motion: reduce)").matches;
+  if ("IntersectionObserver" in window && !reduce) {
+    var io = new IntersectionObserver(function (es) {
+      es.forEach(function (e) {
+        var v = e.target;
+        if (e.isIntersecting) { v.preload = "auto"; var p = v.play(); if (p && p.catch) p.catch(function () {}); }
+        else v.pause();
+      });
+    }, { threshold: 0.35 });
+    vids.forEach(function (v) { io.observe(v); });
+  }
+  [].forEach.call(document.querySelectorAll(".sound-btn"), function (btn) {
+    btn.addEventListener("click", function () {
+      var v = btn.parentNode.querySelector("video"), turnOn = v.muted;
+      vids.forEach(function (o) { o.muted = true; });
+      [].forEach.call(document.querySelectorAll(".sound-btn"), function (b) { b.textContent = "Sound on"; b.setAttribute("aria-pressed", "false"); });
+      if (turnOn) { v.muted = false; v.play(); btn.textContent = "Sound off"; btn.setAttribute("aria-pressed", "true"); }
+    });
+  });
 
   // Coming soon
   var c = S.comingSoon || {};

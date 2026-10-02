@@ -8,7 +8,8 @@ window.SITE = {
   // Which film loops at the top of the page: "scotland" or "wyoming"
   heroFilm: "scotland",
 
-  // youtubeId = the part after watch?v= in the YouTube URL
+  // video / video4k / poster: self-hosted files in /media (used instead of YouTube when set)
+  // youtubeId = the part after watch?v= in the YouTube URL (fallback)
   films: [
     {
       key: "scotland",
