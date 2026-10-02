@@ -26,7 +26,7 @@ window.SITE = {
       when: "Summer 2026",
       runtime: "0:23",
       youtubeId: "8u2hW86oaec",
-      blurb: "We drove into the Badlands after dark with no idea what was out there. In the morning, over coffee, the Wall was just there."
+      blurb: "We drove into the Badlands after dark with no idea what was out there. In the morning, over coffee, the Wall was just there, as if it had been waiting."
     }
   ],
 
