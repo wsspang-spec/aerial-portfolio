@@ -17,6 +17,9 @@ window.SITE = {
       country: "United Kingdom",
       when: "Summer 2026",
       runtime: "0:23",
+      video: "media/scotland-720.mp4",
+      video4k: "media/scotland-1080.mp4",
+      poster: "media/scotland-poster.jpg",
       youtubeId: "9yStl9l6Mik",
       blurb: "Louie and I drove from Edinburgh into the Highlands. On the Isle of Kerrera we hiked out to a castle ruin and camped beside it. The fish and chips we ate on the way up were one of the best meals I've ever had."
     },
