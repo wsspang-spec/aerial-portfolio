@@ -17,7 +17,7 @@ window.SITE = {
       when: "Summer 2026",
       runtime: "0:23",
       youtubeId: "9yStl9l6Mik",
-      blurb: "Two old friends, single-track roads and weather that changed by the hour. On a remote island off Oban, a castle ruin and a tent at dusk."
+      blurb: "Louie and I drove from Edinburgh into the Highlands. On the Isle of Kerrera we hiked out to a castle ruin and camped beside it. The fish and chips we ate on the way up were one of the best meals I've ever had."
     },
     {
       key: "wyoming",
