@@ -45,7 +45,6 @@ window.SITE = {
     { src: "images/kerrera-coast.jpg", place: "Isle of Kerrera, Scotland", shape: "wide" },
     { src: "images/gylen-camp.jpg", place: "Gylen Castle, Isle of Kerrera", shape: "wide" },
     { src: "images/scotland-glencoe.jpg", place: "Glen Coe, Scotland", shape: "wide" },
-    { src: "images/edinburgh-castle-rock.jpg", place: "Edinburgh Castle, Scotland", shape: "wide" },
     { src: "images/inveraray-castle.jpg", place: "Inveraray Castle, Scotland", shape: "wide" },
     { src: "images/porto-river.jpg", place: "Douro River, Porto", shape: "wide" },
     { src: "images/porto-bridge.jpg", place: "Dom Luís I Bridge, Porto", shape: "wide" },
