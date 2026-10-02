@@ -42,6 +42,7 @@ window.SITE = {
     { src: "images/edinburgh-castle.jpg", place: "Edinburgh, Scotland", shape: "wide" },
     { src: "images/kerrera-tower.jpg", place: "Gylen Castle at dusk", shape: "wide" },
     { src: "images/inveraray-river.jpg", place: "Inveraray Castle, Scotland", shape: "wide" },
+    { src: "images/inveraray-castle.jpg", place: "Inveraray, Argyll", shape: "wide" },
     { src: "images/porto-river.jpg", place: "Douro River, Porto", shape: "wide" },
     { src: "images/porto-bridge.jpg", place: "Dom Luís I Bridge, Porto", shape: "wide" }
   ],
