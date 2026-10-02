@@ -33,7 +33,7 @@ window.SITE = {
   comingSoon: { place: "Porto, Portugal", when: "In the edit" },
 
   // Put photos in the /images folder, then list them here.
-  // shape: "wide" (3:2), "square" (1:1) or "tall" (4:5)
+  // shape: "wide" (16:9), "square" (1:1) or "tall" (4:5)
   stills: [
     { src: "images/scotland-glencoe.jpg", place: "Glen Coe, Scotland", shape: "wide" },
     { src: "images/porto-river.jpg", place: "Douro River, Porto", shape: "wide" },
