@@ -33,7 +33,7 @@ window.SITE = {
       video4k: "media/west-1080.mp4",
       poster: "media/west-poster.jpg",
       youtubeId: "8u2hW86oaec",
-      blurb: "Bailey had a truck and a route to Minneapolis. I had a drone and nowhere better to be. We rolled into the Badlands after dark and found out over coffee the next morning that we'd parked at the edge of the Wall."
+      blurb: "Bailey had a truck and a route to Minneapolis. I had a drone and nowhere better to be. We rolled into the Badlands after dark and found out over coffee the next morning that we'd parked at the edge of \"the Wall.\""
     }
   ],
 
