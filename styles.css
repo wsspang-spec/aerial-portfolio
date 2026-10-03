@@ -149,3 +149,16 @@ footer.band { padding: 28px 0; }
 .lb-prev { left: 8px; top: 50%; transform: translateY(-50%); }
 .lb-next { right: 8px; top: 50%; transform: translateY(-50%); }
 body.lb-lock { overflow: hidden; }
+
+/* Mobile: tighten hero-to-films flow */
+@media (max-width: 760px) {
+  .hero { padding-bottom: 28px; gap: 28px; }
+  .hero-text { gap: 18px; }
+  #films.band { padding-top: 36px; border-top: 0; }
+  .lede { font-size: 17px; }
+}
+.scroll-cue { display: none; align-items: center; gap: 12px; text-decoration: none; color: var(--muted); font-family: var(--mono); font-size: 11px; letter-spacing: .14em; text-transform: uppercase; }
+.scroll-cue::before { content: ""; width: 36px; height: 1px; background: var(--accent); }
+.scroll-cue:hover { color: var(--accent); }
+@media (max-width: 760px) { .scroll-cue { display: inline-flex; align-self: flex-start; } }
+@media (max-width: 760px) { #films .stack-xl { gap: 40px; } #films > .wrap.stack-xl { gap: 32px; } }
