@@ -40,7 +40,7 @@ window.SITE = {
       place: "Porto",
       country: "Portugal",
       when: "Summer 2026",
-      runtime: "0:30",
+      runtime: "0:32",
       video: "media/porto-720.mp4",
       video4k: "media/porto-1440.mp4",
       poster: "media/porto-poster.jpg",
