@@ -34,10 +34,22 @@ window.SITE = {
       poster: "media/west-poster.jpg",
       youtubeId: "8u2hW86oaec",
       blurb: "Bailey had a truck and a route to Minneapolis. I had a drone and nowhere better to be. We rolled into the Badlands after dark and found out over coffee the next morning that we'd parked at the edge of \"the Wall.\""
+    },
+    {
+      key: "porto",
+      place: "Porto",
+      country: "Portugal",
+      when: "Summer 2026",
+      runtime: "0:30",
+      video: "media/porto-720.mp4",
+      video4k: "media/porto-1440.mp4",
+      poster: "media/porto-poster.jpg",
+      silent: true,
+      blurb: "Rodrigo's grandmother cooked for me like I'd been gone for years. Then we spent three days in mosh pits at a music festival and the rest at the beach with his dogs. Porto, a week, and a pastel de nata a day. No regrets."
     }
   ],
 
-  comingSoon: { place: "Porto, Portugal", when: "In the edit" },
+  comingSoon: null,
 
   // Put photos in the /images folder, then list them here.
   // shape: "wide" (16:9), "square" (1:1) or "tall" (4:5)

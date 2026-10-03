@@ -44,7 +44,7 @@
       media = '<video class="film-video" muted loop playsinline preload="metadata"' +
         (f.poster ? ' poster="' + esc(f.poster) + '"' : "") + ' aria-label="' + esc(f.place) + ' film">' +
         '<source src="' + esc(src) + '" type="video/mp4"></video>';
-      sound = '<button type="button" class="sound-btn" aria-pressed="false">Sound on</button>';
+      sound = f.silent ? "" : '<button type="button" class="sound-btn" aria-pressed="false">Sound on</button>';
     } else if (validId(f.youtubeId)) {
       media = embed(f.youtubeId, { title: f.place + " aerial film", controls: true, lazy: true });
     } else {
@@ -84,7 +84,8 @@
 
   // Coming soon
   var c = S.comingSoon || {};
-  $("coming-num").textContent = String(films.length + 1).padStart(2, "0") + " · Coming soon";
+  if (!S.comingSoon) { var cc = document.querySelector(".coming"); if (cc) cc.remove(); }
+  if (S.comingSoon) $("coming-num").textContent = String(films.length + 1).padStart(2, "0") + " · Coming soon";
   if (c.place) $("coming-place").textContent = c.place;
   if (c.when) $("coming-when").textContent = c.when;
 
@@ -146,5 +147,5 @@
   if (L.youtube) btns.push('<a class="btn" href="' + esc(L.youtube) + '" target="_blank" rel="noopener">YouTube</a>');
   if (!btns.length) btns.push('<span class="btn btn-solid">[EMAIL]</span><span class="btn">Instagram</span><span class="btn">YouTube</span>');
   $("contact-links").innerHTML = btns.join("");
-  if (L.instagram) $("coming-link").href = L.instagram;
+  if (L.instagram && $("coming-link")) $("coming-link").href = L.instagram;
 })();
