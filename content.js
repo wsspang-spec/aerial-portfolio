@@ -41,8 +41,8 @@ window.SITE = {
       country: "Portugal",
       when: "Summer 2026",
       runtime: "0:22",
-      video: "media/porto-720.mp4?v=9",
-      video4k: "media/porto-1080.mp4?v=9",
+      video: "media/porto-720.mp4?v=10",
+      video4k: "media/porto-1080.mp4?v=10",
       poster: "media/porto-poster.jpg?v=9",
       blurb: "Rodrigo's grandmother cooked for me like I'd been gone for years. Then we spent three days in mosh pits at a music festival and the rest at the beach with his dogs. Porto, a week, and a pastel de nata a day. No regrets."
     }
